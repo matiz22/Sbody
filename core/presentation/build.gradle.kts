@@ -54,3 +54,8 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 }
+
+compose.resources {
+    packageOfResClass = "pl.sbody.core.presentation.res"
+    generateResClass = always
+}

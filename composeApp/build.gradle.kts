@@ -39,6 +39,9 @@ kotlin {
             implementation(project(":auth:presentation"))
             implementation(project(":auth:domain"))
             implementation(project(":auth:data"))
+            implementation(project(":core:presentation"))
+            implementation(project(":core:domain"))
+            implementation(project(":core:data"))
         }
     }
 }
