@@ -83,7 +83,7 @@ fun RegisterScreen(
                 content = {
                     Text(
                         text = stringResource(Res.string.register),
-                        style = MaterialTheme.typography.displayMedium,
+                        style = MaterialTheme.typography.displaySmall,
                     )
                 },
             )
