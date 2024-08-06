@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.kotlinSerialization)
 }
 
 kotlin {
@@ -35,7 +36,12 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
+            implementation(libs.navigation.compose)
+            implementation(libs.kotlinx.serialization.json)
+            implementation(libs.lifecycle.viewmodel.compose)
+            implementation(libs.koin.compose)
             implementation(project(":auth:domain"))
+            implementation(project(":core:presentation"))
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -53,4 +59,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+}
+
+compose.resources {
+    packageOfResClass = "pl.sbody.auth.presentation.res"
+    generateResClass = always
 }
