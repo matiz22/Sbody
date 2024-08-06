@@ -35,6 +35,9 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
+            api(libs.koin.core)
+            implementation(libs.koin.compose)
+            implementation(libs.lifecycle.viewmodel.compose)
             implementation(project(":core:domain"))
         }
         commonTest.dependencies {
@@ -56,6 +59,7 @@ android {
 }
 
 compose.resources {
+    publicResClass = true
     packageOfResClass = "pl.sbody.core.presentation.res"
     generateResClass = always
 }
