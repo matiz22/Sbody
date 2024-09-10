@@ -24,9 +24,9 @@ import pl.sbody.core.presentation.composables.AppLogo
 
 @Composable
 fun WelcomeScreen(
-    modifier: Modifier = Modifier.fillMaxSize(),
     onLoginClick: () -> Unit,
     onRegisterClick: () -> Unit,
+    modifier: Modifier = Modifier.fillMaxSize(),
 ) {
     Scaffold(modifier = modifier) { paddingValues ->
         Column(

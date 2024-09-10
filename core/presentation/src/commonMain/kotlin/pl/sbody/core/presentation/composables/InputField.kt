@@ -15,10 +15,10 @@ import androidx.compose.ui.text.input.VisualTransformation
 fun InputField(
     value: String,
     onValueChange: (String) -> Unit,
+    modifier: Modifier = Modifier,
     valueError: String? = null,
     enabled: Boolean = true,
     readOnly: Boolean = false,
-    modifier: Modifier = Modifier,
     placeholder: @Composable (() -> Unit)? = null,
     leadingIcon: @Composable (() -> Unit)? = null,
     trailingIcon: @Composable (() -> Unit)? = null,

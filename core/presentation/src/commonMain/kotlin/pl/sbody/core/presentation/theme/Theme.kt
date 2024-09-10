@@ -263,6 +263,6 @@ fun AppTheme(
             darkTheme -> darkScheme
             else -> lightScheme
         }
-    val appTypography = AppTypography()
+    val appTypography = appTypography()
     MaterialTheme(colorScheme = colorScheme, typography = appTypography, content = content)
 }

@@ -15,6 +15,7 @@ import pl.sbody.auth.presentation.graphs.authGraph
 import pl.sbody.auth.presentation.routes.AuthRoutes
 import pl.sbody.core.presentation.theme.AppTheme
 
+@Suppress("ktlint:compose:modifier-missing-check")
 @Composable
 fun App() {
     KoinContext {

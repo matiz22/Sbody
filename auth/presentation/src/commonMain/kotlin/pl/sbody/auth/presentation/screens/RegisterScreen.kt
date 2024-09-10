@@ -31,9 +31,9 @@ import pl.sbody.core.presentation.composables.InputField
 
 @Composable
 fun RegisterScreen(
-    modifier: Modifier = Modifier.fillMaxSize(),
     loginScreenState: RegisterScreenState,
     onEvent: (RegisterScreenEvents) -> Unit,
+    modifier: Modifier = Modifier.fillMaxSize(),
 ) {
     val focusManager = LocalFocusManager.current
     Scaffold(modifier = modifier) { paddingValues ->

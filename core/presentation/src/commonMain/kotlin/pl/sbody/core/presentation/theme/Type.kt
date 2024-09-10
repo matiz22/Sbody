@@ -15,7 +15,7 @@ import pl.sbody.core.presentation.res.norwester
 val baseline = Typography()
 
 @Composable
-fun AppTypography(): Typography {
+fun appTypography(): Typography {
     val displayFontFamily = DisplayFontFamily()
     val bodyFontFamily = BodyFontFamily()
     return Typography(
