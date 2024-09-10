@@ -40,7 +40,7 @@ fun LoginScreen(
         Column(
             modifier = Modifier.fillMaxSize().padding(paddingValues),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(16.dp),
+            verticalArrangement = Arrangement.SpaceAround,
         ) {
             AppLogo(modifier = Modifier.size(200.dp))
             Column(
