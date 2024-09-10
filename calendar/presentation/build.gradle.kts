@@ -39,6 +39,9 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
+            implementation(libs.lifecycle.viewmodel.compose)
+            implementation(libs.kizitonwose.calendar)
+            implementation(libs.kotlinx.datetime)
             implementation(project(":calendar:domain"))
         }
         commonTest.dependencies {
