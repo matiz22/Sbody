@@ -32,7 +32,7 @@ import pl.sbody.calendar.presentation.states.CalendarWidgetState
 fun CalendarWidget(
     calendarWidgetState: CalendarWidgetState,
     onCalendarWidgetEvent: (CalendarWidgetEvents) -> Unit,
-    modifier: Modifier = Modifier.padding(8.dp),
+    modifier: Modifier = Modifier,
     checkAvailability: (LocalDate) -> Boolean,
 ) {
     val calendarState =
