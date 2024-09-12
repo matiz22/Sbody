@@ -1,0 +1,8 @@
+<resources>
+    <string name="user_slots">Your slots</string>
+    <string name="coach">Coach</string>
+    <string name="duration">Duration</string>
+    <string name="note">Note</string>
+    <string name="slot_description">Description</string>
+    <string name="price">Price</string>
+</resources>

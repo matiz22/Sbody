@@ -37,6 +37,7 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.koin.compose)
             implementation(libs.navigation.compose)
+            implementation(libs.kotlinx.datetime)
             implementation(project(":calendar:presentation"))
             implementation(project(":calendar:domain"))
             implementation(project(":calendar:data"))
