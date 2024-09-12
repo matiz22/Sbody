@@ -1,4 +1,8 @@
 <resources>
     <string name="user_slots">Twoje treningi</string>
     <string name="coach">Trener</string>
+    <string name="duration">Czas</string>
+    <string name="note">Notatka</string>
+    <string name="slot_description">Opis</string>
+    <string name="price">Cena</string>
 </resources>
