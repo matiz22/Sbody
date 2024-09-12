@@ -21,7 +21,7 @@ data class TrainingSlot(
     val length: Int,
     val note: String,
     val status: Int,
-    val price: Boolean,
+    val price: Float,
     val paid: Int,
     val type: SlotType,
     val occurred: Boolean,
