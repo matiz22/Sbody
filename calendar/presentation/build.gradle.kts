@@ -45,6 +45,7 @@ kotlin {
             implementation(libs.kotlinx.datetime)
             implementation(libs.kotlinx.serialization.json)
             implementation(project(":calendar:domain"))
+            implementation(projects.core.presentation)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
