@@ -63,3 +63,8 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 }
+
+compose.resources {
+    packageOfResClass = "pl.sbody.calendar.presentation.res"
+    generateResClass = always
+}

@@ -21,9 +21,9 @@ import pl.sbody.calendar.presentation.composables.CalendarWidget
 import pl.sbody.calendar.presentation.composables.SlotPosition
 import pl.sbody.calendar.presentation.events.CalendarWidgetEvents
 import pl.sbody.calendar.presentation.models.UsersTrainingSlot
+import pl.sbody.calendar.presentation.res.Res
+import pl.sbody.calendar.presentation.res.user_slots
 import pl.sbody.calendar.presentation.states.CalendarWidgetState
-import sbody.calendar.presentation.generated.resources.Res
-import sbody.calendar.presentation.generated.resources.user_slots
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
