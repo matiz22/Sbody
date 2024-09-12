@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.kotlinSerialization)
 }
 
 kotlin {
@@ -42,6 +43,7 @@ kotlin {
             implementation(libs.lifecycle.viewmodel.compose)
             implementation(libs.kizitonwose.calendar)
             implementation(libs.kotlinx.datetime)
+            implementation(libs.kotlinx.serialization.json)
             implementation(project(":calendar:domain"))
         }
         commonTest.dependencies {
