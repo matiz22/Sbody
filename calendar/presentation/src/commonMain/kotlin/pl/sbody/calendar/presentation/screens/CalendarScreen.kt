@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -24,14 +25,18 @@ import pl.sbody.calendar.presentation.models.UsersTrainingSlot
 import pl.sbody.calendar.presentation.res.Res
 import pl.sbody.calendar.presentation.res.user_slots
 import pl.sbody.calendar.presentation.states.CalendarWidgetState
+import pl.sbody.core.presentation.composables.ProfilePicture
+import pl.sbody.core.presentation.models.UserSummary
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CalendarScreen(
     calendarWidgetState: CalendarWidgetState,
     pickedDaySlots: List<UsersTrainingSlot>,
+    userSummary: UserSummary,
     onCalendarWidgetEvent: (CalendarWidgetEvents) -> Unit,
     navigateToDetails: (Int) -> Unit,
+    navigateToProfile: () -> Unit,
     modifier: Modifier = Modifier.fillMaxSize(),
     checkLocalDate: (LocalDate) -> Boolean,
 ) {
@@ -41,6 +46,11 @@ fun CalendarScreen(
             TopAppBar(
                 title = {
                     Text(text = stringResource(Res.string.user_slots))
+                },
+                actions = {
+                    IconButton(onClick = navigateToProfile) {
+                        ProfilePicture(url = userSummary.photoUrl)
+                    }
                 },
             )
         },
