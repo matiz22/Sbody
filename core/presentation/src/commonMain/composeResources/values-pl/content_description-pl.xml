@@ -1,3 +1,5 @@
 <resources>
     <string name="app_logo">Logo aplikacji</string>
+    <string name="balance">Saldo</string>
+    <string name="navigate_back">Powrót</string>
 </resources>
