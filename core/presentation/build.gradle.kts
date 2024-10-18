@@ -38,6 +38,7 @@ kotlin {
             api(libs.koin.core)
             implementation(libs.koin.compose)
             implementation(libs.lifecycle.viewmodel.compose)
+            implementation(libs.sketch.compose)
             implementation(project(":core:domain"))
         }
         commonTest.dependencies {
