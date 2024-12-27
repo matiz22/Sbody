@@ -61,6 +61,7 @@ kotlin {
             implementation(libs.kizitonwose.calendar)
             implementation(libs.kotlinx.datetime)
             implementation(libs.kotlinx.serialization.json)
+            implementation(libs.navigation.compose)
             implementation(project(":calendar:domain"))
             implementation(projects.core.presentation)
         }
