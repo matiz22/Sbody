@@ -12,7 +12,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import org.koin.compose.KoinContext
 import pl.sbody.auth.presentation.graphs.authGraph
-import pl.sbody.auth.presentation.routes.AuthRoutes
+import pl.sbody.calendar.presentation.graphs.calendarGraph
+import pl.sbody.core.presentation.routes.AuthRoutes
 import pl.sbody.core.presentation.theme.AppTheme
 
 @Suppress("ktlint:compose:modifier-missing-check")
@@ -34,6 +35,7 @@ fun App() {
                         startDestination = AuthRoutes.AuthScreens,
                     ) {
                         authGraph(navController)
+                        calendarGraph(navController)
                     }
                 }
             }
