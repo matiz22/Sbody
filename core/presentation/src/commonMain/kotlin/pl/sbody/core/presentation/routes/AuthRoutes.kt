@@ -1,4 +1,4 @@
-package pl.sbody.auth.presentation.routes
+package pl.sbody.core.presentation.routes
 
 import kotlinx.serialization.Serializable
 
