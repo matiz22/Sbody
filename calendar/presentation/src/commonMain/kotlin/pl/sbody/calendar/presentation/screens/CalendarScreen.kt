@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.sizeIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -53,6 +54,7 @@ fun CalendarScreen(
         ) {
             item {
                 CalendarWidget(
+                    modifier = Modifier.sizeIn(minWidth = 500.dp, maxWidth = 700.dp, minHeight = 500.dp, maxHeight = 700.dp),
                     calendarWidgetState = calendarWidgetState,
                     onCalendarWidgetEvent = onCalendarWidgetEvent,
                     checkAvailability = checkLocalDate,
