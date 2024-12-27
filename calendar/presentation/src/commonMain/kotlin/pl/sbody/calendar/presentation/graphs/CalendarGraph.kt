@@ -10,6 +10,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import com.kizitonwose.calendar.core.now
 import com.kizitonwose.calendar.core.plusDays
+import com.kizitonwose.calendar.core.plusMonths
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.LocalDateTime
 import kotlinx.datetime.LocalTime
@@ -70,6 +71,18 @@ val exampleUsersTrainingSlots =
             note = "",
             status = 3,
             price = 170.0F,
+            paid = 0,
+            type = SlotType(1, "Individual", "One-on-one session"),
+            occurred = false,
+        ),
+        UsersTrainingSlot(
+            id = 1,
+            coach = Coach(1, "John", "Doe"),
+            startDateTime = LocalDateTime(date = LocalDate.now().plusMonths(1), LocalTime(10, 10)),
+            length = 60,
+            note = "Beginner session",
+            status = 1,
+            price = 370.0F,
             paid = 0,
             type = SlotType(1, "Individual", "One-on-one session"),
             occurred = false,
