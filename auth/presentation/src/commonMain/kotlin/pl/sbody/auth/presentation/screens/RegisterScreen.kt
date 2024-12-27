@@ -3,9 +3,9 @@ package pl.sbody.auth.presentation.screens
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.sizeIn
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
@@ -78,7 +78,7 @@ fun RegisterScreen(
                 )
             }
             Button(
-                modifier = Modifier.fillMaxWidth().padding(16.dp),
+                modifier = Modifier.sizeIn(minWidth = 200.dp, maxWidth = 400.dp),
                 onClick = { onEvent(RegisterScreenEvents.Submit) },
                 content = {
                     Text(

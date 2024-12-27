@@ -4,9 +4,9 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.sizeIn
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
@@ -44,7 +44,7 @@ fun WelcomeScreen(
                 verticalArrangement = Arrangement.spacedBy(8.dp),
             ) {
                 Button(
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = Modifier.sizeIn(minWidth = 200.dp, maxWidth = 400.dp),
                     onClick = onLoginClick,
                     content = {
                         Text(
@@ -55,7 +55,7 @@ fun WelcomeScreen(
                 )
 
                 OutlinedButton(
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = Modifier.sizeIn(minWidth = 200.dp, maxWidth = 400.dp),
                     onClick = onRegisterClick,
                     content = {
                         Text(
