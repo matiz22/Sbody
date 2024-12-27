@@ -7,5 +7,7 @@ sealed class CalendarRoutes {
     @Serializable
     data object CalendarScreens : CalendarRoutes() {
         @Serializable data object CalendarScreen : CalendarRoutes()
+
+        @Serializable data object SlotDetailsScreen : CalendarRoutes()
     }
 }
