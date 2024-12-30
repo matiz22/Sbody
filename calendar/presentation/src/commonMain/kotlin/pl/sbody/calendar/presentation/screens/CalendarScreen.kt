@@ -54,7 +54,7 @@ fun CalendarScreen(
         ) {
             item {
                 CalendarWidget(
-                    modifier = Modifier.sizeIn(minWidth = 500.dp, maxWidth = 700.dp, minHeight = 500.dp, maxHeight = 700.dp),
+                    modifier = Modifier.sizeIn(minWidth = 500.dp, maxWidth = 700.dp, maxHeight = 700.dp),
                     calendarWidgetState = calendarWidgetState,
                     onCalendarWidgetEvent = onCalendarWidgetEvent,
                     checkAvailability = checkLocalDate,
