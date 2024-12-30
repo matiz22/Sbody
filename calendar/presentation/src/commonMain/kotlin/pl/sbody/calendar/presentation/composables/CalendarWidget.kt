@@ -20,6 +20,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.kizitonwose.calendar.compose.HorizontalCalendar
 import com.kizitonwose.calendar.compose.rememberCalendarState
+import com.kizitonwose.calendar.core.YearMonth
 import com.kizitonwose.calendar.core.minusMonths
 import com.kizitonwose.calendar.core.plusMonths
 import com.kizitonwose.calendar.core.yearMonth
@@ -37,8 +38,8 @@ fun CalendarWidget(
 ) {
     val calendarState =
         rememberCalendarState(
-            startMonth = calendarWidgetState.pickedDate.yearMonth,
-            endMonth = calendarWidgetState.pickedDate.yearMonth.plusMonths(1),
+            startMonth = YearMonth.now(),
+            endMonth = YearMonth.now().plusMonths(1),
         )
     val coroutineScope = rememberCoroutineScope()
     Card(
