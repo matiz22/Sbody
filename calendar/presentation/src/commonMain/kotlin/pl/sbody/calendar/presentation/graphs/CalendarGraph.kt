@@ -93,7 +93,7 @@ fun NavGraphBuilder.calendarGraph(navController: NavHostController) {
     navigation<CalendarRoutes.CalendarScreens>(startDestination = CalendarRoutes.CalendarScreens.CalendarScreen) {
         composable<CalendarRoutes.CalendarScreens.SlotDetailsScreen> {
             SlotDetailsScreen(
-                slot = exampleUsersTrainingSlots.random(),
+                slot = exampleUsersTrainingSlots[0],
                 navigateBack = { navController.navigateUp() },
             )
         }
